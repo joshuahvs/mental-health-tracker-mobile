@@ -1,4 +1,8 @@
-# mental_health_tracker
+# mental_health_tracker_mobile
+
+## Nama: Joshua Hans Vito Soehendra
+## NPM: 2306165540
+## Kelas: PBP A
 
 A new Flutter project.
 
