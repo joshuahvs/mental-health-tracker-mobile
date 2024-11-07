@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mental_health_tracker/screens/moodentry_form.dart';
 import 'package:mental_health_tracker/widgets/left_drawer.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -154,6 +155,16 @@ class ItemCard extends StatelessWidget {
             ..showSnackBar(
               SnackBar(content: Text("Kamu telah menekan tombol ${item.name}!")),
             );
+
+          // Menambahkan navigasi ke halaman yang sesuai
+          if (item.name == "Tambah Mood") {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => MoodEntryFormPage(),
+              ),
+            );
+          }
         },
         // Container untuk menyimpan Icon dan Text
         child: Container(
