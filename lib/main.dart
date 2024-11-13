@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mental_health_tracker/screens/login.dart';
 import 'package:mental_health_tracker/screens/menu.dart';
 import 'package:pbp_django_auth/pbp_django_auth.dart';
 import 'package:provider/provider.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.deepPurple,
           ).copyWith(secondary: Colors.deepPurple[400]),
         ),
-        home: MyHomePage(),
+        home: const LoginPage(),
       ),
     );
   }
